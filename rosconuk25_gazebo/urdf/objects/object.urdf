@@ -23,7 +23,7 @@
 
       <origin xyz= "0.0 0.0 0.0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find rosconuk25_gazebo)/meshes/objects/${name}.dae"/>
+        <mesh filename="---"/>
       </geometry>
 
     </collision>
@@ -32,7 +32,7 @@
 
       <origin xyz= "0.0 0.0 0.0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="file://$(find rosconuk25_gazebo)/meshes/objects/${name}.dae"/>
+        <mesh filename="---"/>
       </geometry>
 
     </visual>

@@ -55,17 +55,10 @@
   <xacro:property name="output_recipe_filename" value="$(arg output_recipe_filename)"/>
 
   <!-- Include XACRO-MACRO file of the UR3: -->
-  <xacro:include filename="$(find ros2srrc_robots)/ur3/urdf/ur3_macro.urdf.xacro"/>	
-  <xacro:ur3 
-    bringup="${bringup}"
-    robot_ip="${robot_ip}"
-    EE="${EE}"
-    EE_name="${EE_name}"
+  <!-- ADD HERE -->
 
-    script_filename="${script_filename}"
-    input_recipe_filename="${input_recipe_filename}"
-    output_recipe_filename="${output_recipe_filename}"
-  />
+  <!-- Include XACRO-MACRO file of the ENF-EFFECTOR (if applicable): -->
+  <!-- ADD HERE -->
 
   <!-- Load ROS 2 Gazebo Plugin -->
   <xacro:unless value="${bringup}">
@@ -76,6 +69,9 @@
 
         <!-- UR3 Controller -->
         <parameters>$(find ros2srrc_robots)/ur3/config/controller.yaml</parameters>
+
+        <!-- End-Effector Controller (uncomment, if needed) -->
+        <!-- <parameters>$(find ros2srrc_endeffectors)/${EE_name}/config/controller.yaml</parameters> -->
 
       </plugin>
     </gazebo>
@@ -90,13 +86,13 @@
     <visual>
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file://$(find rosconuk25_gazebo)/meshes/ur3stand/ur3stand.dae" scale="1 1 1" />
+        <mesh filename="---" scale="1 1 1" />
       </geometry>
     </visual>
     <collision>
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file://$(find rosconuk25_gazebo)/meshes/ur3stand/ur3stand.dae" scale="1 1 1" />
+        <mesh filename="---" scale="1 1 1" />
       </geometry>
     </collision>
     <inertial>
@@ -107,16 +103,43 @@
 
   <!-- Robot Stand: FIXED JOINT -->
   <joint name="world_joint" type="fixed">
-    <parent link="world" />
-    <child link = "ur3_stand" />
+    <parent link="---" />
+    <child link = "---" />
     <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
   </joint>
 
   <!-- Robot Stand: Robot+Stand JOINT -->
   <joint name="ur_joint" type="fixed">
-    <parent link="ur3_stand" />
+    <parent link="---" />
     <child link = "base_link" />
     <origin xyz="0.0 0.0 0.85" rpy="0.0 0.0 0.0" /> 
+  </joint>
+
+  <!-- ERGOBOX -->
+  <link name="ergobox">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="---" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="---" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="10.0"/>
+      <inertia ixx="500.0" ixy="500.0" ixz="500.0" iyy="500.0" iyz="500.0" izz="500.0" />
+    </inertial>
+  </link>
+
+  <!-- Ergobox: FIXED JOINT -->
+  <joint name="ergobox-ur3stand-fixed" type="fixed">
+    <parent link="---"/>
+    <child link="---"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
   </joint>
 
 </robot>

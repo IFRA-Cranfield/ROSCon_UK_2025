@@ -4,15 +4,15 @@ Configurations:
 
   - ID: "ur3_1"
     Name: "UR3 Robot alone on Cranfield University (IA Lab) Stand."
-    urdf: "ur3_rosconuk25_1.urdf.xacro"
-    rob: "ur3"
-    ee: "none"
+    urdf: "---.urdf.xacro"
+    rob: ""
+    ee: ""
 
   - ID: "ur3_2"
-    Name: "UR3 Robot + Robotiq HandE Gripper on Cranfield University (IA Lab) Stand: Cube Pick&Place use-case."
-    urdf: "ur3_rosconuk25_2.urdf.xacro"
-    rob: "ur3"
-    ee: "robotiq_hande"
+    Name: "UR3 Robot + Robotiq HandE Gripper on Cranfield University (IA Lab) Stand."
+    urdf: "---.urdf.xacro"
+    rob: ""
+    ee: ""
 
   - ID: "ur3_3"
     Name: "UR3 Robot + Robotiq HandE Gripper on Cranfield University (IA Lab) Stand: Cube Pose Estimation use-case."

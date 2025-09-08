@@ -21,107 +21,41 @@ Sequence:
   
   - Step: 2
     Name: "[UR3-CubePP]: Cube - PickApproach."
-    Type: "RobMove"
-    Movement: "PTP"
-    Speed: 0.25
-    Delay: 0.0
-    Input:
-      x: -0.2076
-      y: 0.1903
-      z: 0.925
-      qx: 0.0
-      qy: 1.0
-      qz: 0.0
-      qw: 0.0
+    Type: 
 
   - Step: 3
     Name: "[UR3-CubePP]: Cube - Pick."
-    Type: "RobMove"
-    Movement: "LIN"
-    Speed: 0.1
-    Delay: 0.25
-    Input:
-      x: -0.2076
-      y: 0.1903
-      z: 0.8625
-      qx: 0.0
-      qy: 1.0
-      qz: 0.0
-      qw: 0.0
+    Type: 
 
   - Step: 4
     Name: "[UR3-CubePP]: Close Gripper."
-    Type: "RobotiqHandE/UR"
-    Action: "CLOSE"
-    Delay: 0.25
+    Type:
 
   - Step: 5
     Name: "[UR3-CubePP]: Cube - LiftCube."
-    Type: "RobMove"
-    Movement: "LIN"
-    Speed: 0.1
-    Delay: 0.0
-    Input:
-      x: -0.2076
-      y: 0.1903
-      z: 0.925
-      qx: 0.0
-      qy: 1.0
-      qz: 0.0
-      qw: 0.0
+    Type: 
 
   - Step: 6
-    Name: "[UR3-CubePP]: Cube - PlaceApproach."
-    Type: "RobMove"
-    Movement: "PTP"
-    Speed: 0.25
-    Delay: 0.0
-    Input:
-      x: 0.2082
-      y: 0.1764
-      z: 0.95
-      qx: 0.0
-      qy: 1.0
-      qz: 0.0
-      qw: 0.0
+    Name: "[UR3-CubePP]: MoveJ - Intermediate (Home)Position."
+    Type: 
 
   - Step: 7
-    Name: "[UR3-CubePP]: Cube - Place."
-    Type: "RobMove"
-    Movement: "LIN"
-    Speed: 0.1
-    Delay: 0.25
-    Input:
-      x: 0.2082
-      y: 0.1764
-      z: 0.925
-      qx: 0.0
-      qy: 1.0
-      qz: 0.0
-      qw: 0.0
+    Name: "[UR3-CubePP]: Cube - PlaceApproach."
+    Type: 
 
   - Step: 8
-    Name: "[UR3-CubePP]: Open Gripper."
-    Type: "RobotiqHandE/UR"
-    Action: "OPEN"
-    Delay: 0.25
+    Name: "[UR3-CubePP]: Cube - Place."
+    Type: 
 
   - Step: 9
-    Name: "[UR3-CubePP]: Cube - PlaceApproach."
-    Type: "RobMove"
-    Movement: "LIN"
-    Speed: 0.1
-    Delay: 0.0
-    Input:
-      x: 0.2082
-      y: 0.1764
-      z: 0.95
-      qx: 0.0
-      qy: 1.0
-      qz: 0.0
-      qw: 0.0
+    Name: "[UR3-CubePP]: Open Gripper."
+    Type: 
 
   - Step: 10
+    Name: "[UR3-CubePP]: Cube - PlaceApproach."
+    Type: 
+
+  - Step: 11
     Name: "[UR3-CubePP]: MoveJ - HomePosition."
     Type: "MoveJ"
     Speed: 0.25
