@@ -32,7 +32,7 @@ sys.dont_write_bytecode = True
 # IFRA-Cranfield (2025) ROS 2 Sim-to-Real Robot Control. UR3 Robot. URL: https://github.com/IFRA-Cranfield/ur3_CranfieldRobotics.
 # IFRA-Cranfield (2025) Robot Simulation and Control Workshop, ROSCon UK 2025. URL: https://github.com/IFRA-Cranfield/ROSCon_UK_2025.
 
-# CubePP.py
+# cubePP.py
 # This program performs a Cube Pick & Place task.
 
 # ===== IMPORT REQUIRED COMPONENTS ===== #

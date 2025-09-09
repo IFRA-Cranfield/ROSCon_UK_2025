@@ -21,7 +21,6 @@ ros2 launch ros2srrc_launch simulation.launch.py package:=<PACKAGE_NAME> config:
 ros2 launch ros2srrc_launch simulation.launch.py package:=ros2srrc_irb120 config:=irb120_1
 ros2 launch ros2srrc_launch simulation.launch.py package:=ros2srrc_irb120 config:=irb120_2
 ros2 launch ros2srrc_launch simulation.launch.py package:=ros2srrc_irb120 config:=irb120_3
-ros2 launch ros2srrc_launch simulation.launch.py package:=ros2srrc_irb120 config:=irb120_4
 
 # ABB IRB-1200:
 ros2 launch ros2srrc_launch simulation.launch.py package:=ros2srrc_irb1200 config:=irb1200_1
@@ -63,7 +62,6 @@ ros2 launch ros2srrc_launch moveit2.launch.py package:=<PACKAGE_NAME> config:=<C
 ros2 launch ros2srrc_launch moveit2.launch.py package:=ros2srrc_irb120 config:=irb120_1
 ros2 launch ros2srrc_launch moveit2.launch.py package:=ros2srrc_irb120 config:=irb120_2
 ros2 launch ros2srrc_launch moveit2.launch.py package:=ros2srrc_irb120 config:=irb120_3
-ros2 launch ros2srrc_launch moveit2.launch.py package:=ros2srrc_irb120 config:=irb120_4
 
 # ABB IRB-1200:
 ros2 launch ros2srrc_launch moveit2.launch.py package:=ros2srrc_irb1200 config:=irb1200_1

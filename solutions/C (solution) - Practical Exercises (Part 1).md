@@ -12,10 +12,10 @@ Firstly, launch the ROS 2 Environment (w/ MoveIt!2):
 
 ```sh
 # In simulation:
-ros2 launch ros2srrc_launch moveit2.launch.py package:=rosconuk25 config:=ur3_1
+ros2 launch ros2srrc_launch moveit2.launch.py package:=rosconuk25 config:=ur3_2
 
 # For the real robot:
-ros2 launch ros2srrc_launch bringup_ur.launch.py package:=rosconuk25 config:=ur3_1 robot_ip:=192.168.1.10
+ros2 launch ros2srrc_launch bringup_ur.launch.py package:=rosconuk25 config:=ur3_2 robot_ip:=192.168.1.10
 ```
 
 (NOTE): Feel free to test with any other Robot/End-Effector. But please, remember to launch the moveit2.launch file, which contains the ROS 2 Servers for the mentioned tools!
@@ -79,7 +79,7 @@ ros2 launch ros2srrc_launch simulation.launch.py package:=rosconuk25 config:=ur3
 ros2 run ros2srrc_execution SpawnObject.py --package "rosconuk25_gazebo" --urdf "WhiteCube.urdf" --name "WhiteCube" --x -0.2076 --y 0.1903 --z 0.92
 
 # 3. Execute the program:
-ros2 run ros2srrc_execution ExecuteProgram.py package:=rosconuk25_execution program:=CubePP_ur3_sim
+ros2 run ros2srrc_execution ExecuteProgram.py package:=rosconuk25_execution program:=cubePP_ur3_sim
 ```
 
 In the real robot cell:
@@ -91,7 +91,7 @@ ros2 launch ros2srrc_launch bringup_ur.launch.py package:=rosconuk25 config:=ur3
 # 2. Place the cube on top of the robot workspace.
 
 # 3. Execute the program:
-ros2 run ros2srrc_execution ExecuteProgram.py package:=rosconuk25_execution program:=CubePP_ur3
+ros2 run ros2srrc_execution ExecuteProgram.py package:=rosconuk25_execution program:=cubePP_ur3
 ```
 
 ## C3 - Implement the Same Pick & Place with a Python Script
@@ -117,13 +117,13 @@ In simulation:
 
 ```sh
 # 1. Launch the simulation environment:
-ros2 launch ros2srrc_launch simulation.launch.py package:=rosconuk25 config:=ur3_2
+ros2 launch ros2srrc_launch moveit2.launch.py package:=rosconuk25 config:=ur3_2
 
 # 2. Spawn a cube within the environment:
 ros2 run ros2srrc_execution SpawnObject.py --package "rosconuk25_gazebo" --urdf "WhiteCube.urdf" --name "WhiteCube" --x -0.2076 --y 0.1903 --z 0.92
 
 # 3. Execute the program:
-ros2 run rosconuk25_execution cubePP.py environment:="gazebo
+ros2 run rosconuk25_execution cubePP.py environment:="gazebo"
 ```
 
 In the real robot cell:
