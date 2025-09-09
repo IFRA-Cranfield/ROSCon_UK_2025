@@ -7,7 +7,7 @@ Specifications:
 Sequence: 
   
   - Step: 1
-    Name: "[UR3-CubePP(sim)]: MoveJ - HomePosition."
+    Name: "[UR3-cubePP(sim)]: MoveJ - HomePosition."
     Type: "MoveJ"
     Speed: 0.25
     Delay: 0.0
@@ -20,43 +20,43 @@ Sequence:
       joint6: 0.0
   
   - Step: 2
-    Name: "[UR3-CubePP(sim)]: Cube - PickApproach."
+    Name: "[UR3-cubePP(sim)]: Cube - PickApproach."
     Type: 
 
   - Step: 3
-    Name: "[UR3-CubePP(sim)]: Cube - Pick."
+    Name: "[UR3-cubePP(sim)]: Cube - Pick."
     Type: 
 
   - Step: 4
-    Name: "[UR3-CubePP(sim)]: Close Gripper."
+    Name: "[UR3-cubePP(sim)]: Close Gripper."
     Type: 
 
   - Step: 5
-    Name: "[UR3-CubePP(sim)]: Cube - LiftCube."
+    Name: "[UR3-cubePP(sim)]: Cube - LiftCube."
     Type: 
 
   - Step: 6
-    Name: "[UR3-CubePP]: MoveJ - Intermediate (Home)Position."
+    Name: "[UR3-cubePP]: MoveJ - Intermediate (Home)Position."
     Type: 
 
   - Step: 7
-    Name: "[UR3-CubePP(sim)]: Cube - PlaceApproach."
+    Name: "[UR3-cubePP(sim)]: Cube - PlaceApproach."
     Type: 
 
   - Step: 8
-    Name: "[UR3-CubePP(sim)]: Cube - Place."
+    Name: "[UR3-cubePP(sim)]: Cube - Place."
     Type: 
 
   - Step: 9
-    Name: "[UR3-CubePP(sim)]: Open Gripper."
+    Name: "[UR3-cubePP(sim)]: Open Gripper."
     Type: 
 
   - Step: 10
-    Name: "[UR3-CubePP(sim)]: Cube - PlaceApproach."
+    Name: "[UR3-cubePP(sim)]: Cube - PlaceApproach."
     Type: 
 
   - Step: 11
-    Name: "[UR3-CubePP(sim)]: MoveJ - HomePosition."
+    Name: "[UR3-cubePP(sim)]: MoveJ - HomePosition."
     Type: "MoveJ"
     Speed: 0.25
     Delay: 0.0

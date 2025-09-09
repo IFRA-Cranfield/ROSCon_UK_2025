@@ -31,7 +31,7 @@ sys.dont_write_bytecode = True
 # IFRA-Cranfield (2023) ROS 2 Sim-to-Real Robot Control. URL: https://github.com/IFRA-Cranfield/ros2_SimRealRobotControl.
 # IFRA-Cranfield (2025) ROS 2 Sim-to-Real Robot Control. UR3 Robot. URL: https://github.com/IFRA-Cranfield/ur3_CranfieldRobotics.
 
-# CubePP.py
+# cubePP.py
 # This program:
 #   1. Checks if the desired CUBE is within the workspace.
 #   2. Sends its coordinates to the robot to perform a pick and place task.
@@ -79,7 +79,7 @@ class CubePose(Node):
 
     def __init__(self, OBJECT):
 
-        super().__init__("ur3cranfield_ope_cubepose")
+        super().__init__("rosconuk25_ope_cubepose")
         
         TopicName = "/" + OBJECT + "/ObjectPoseEstimation"
         self.SUB = self.create_subscription(ObjectPose, TopicName, self.CALLBACK_FN, 10)

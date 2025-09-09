@@ -11,7 +11,7 @@ This node performs **cube pose estimation** and **publishes poses to ROS 2 topi
 **Command:**
 
 ```bash
-ros2 run ur3cranfield_ope PositionEstimation.py environment:="<ENV>" model:=ColouredCubes_ur3 visualize:=true
+ros2 run rosconuk25_ope PositionEstimation.py environment:="<ENV>" model:=ColouredCubes_ur3 visualize:=true
 # ENV  = gazebo | robot
 ```
 
