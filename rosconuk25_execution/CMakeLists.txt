@@ -38,16 +38,8 @@ endif()
 install(
   DIRECTORY 
     programs
-    python
   DESTINATION 
     share/${PROJECT_NAME}
-)
-
-install(PROGRAMS
-  
-  python/cubePP.py
-
-  DESTINATION lib/${PROJECT_NAME} 
 )
 
 ament_package()

@@ -4,18 +4,20 @@ Configurations:
 
   - ID: "ur3_1"
     Name: "UR3 Robot alone on Cranfield University (IA Lab) Stand."
-    urdf: "---.urdf.xacro"
-    rob: ""
-    ee: ""
+    urdf: "CellConfiguration_1.urdf.xacro"
+    rob: "ur3"
+    ee: "none"
 
   - ID: "ur3_2"
     Name: "UR3 Robot + Robotiq HandE Gripper on Cranfield University (IA Lab) Stand."
-    urdf: "---.urdf.xacro"
-    rob: ""
-    ee: ""
-
-  - ID: "ur3_3"
-    Name: "UR3 Robot + Robotiq HandE Gripper on Cranfield University (IA Lab) Stand: Cube Pose Estimation use-case."
-    urdf: "ur3_rosconuk25_3.urdf.xacro"
+    urdf: "CellConfiguration_2.urdf.xacro"
     rob: "ur3"
     ee: "robotiq_hande"
+
+# ***** REMEMBER ***** #
+
+# PACKAGE set: This package-set is named rosconuk25, and that is the name that comes under the package:="" input argument in the launch file.
+
+# ID: Name of the configuration -> This is the name that will be used to identify the configuration in the launch file.
+# urdf: Name of the URDF file of that specific ROBOT CELL CONFIGURATION.
+# rob + ee: Robot + End-Effector names -> Required for the LAUNCH FILE to load the correct ROS Control and MoveIt!2 configurations.
