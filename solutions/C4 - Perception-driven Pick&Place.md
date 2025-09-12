@@ -1,13 +1,6 @@
-# EXERCISE C (PART 2) - Solutions
+# PART C: Integration of External Tools within the ROS 2-based Robotic System
 
-## C4 - Perception‑Driven Pick & Place
-
-### Completed files
-
-In rosconuk25_ope:
-- python/cubePP_detection.py script.
-
-### Solution
+## C4: Perception-driven Pick&Place Task
 
 In simulation:
 
