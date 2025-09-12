@@ -42,6 +42,3 @@ __TASK__
 2. Open a new Terminal Shell, and spawn any coloured cube on top of the UR3 Stand. 
 
     NOTE: The units are (m) and the origin is in the centre of the robot's base link, ground level.
-
-</br>
-</br>
